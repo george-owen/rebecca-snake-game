@@ -23,3 +23,13 @@ Rebecca Snake Game is a twist on the classic Snake game. Every time you lose, yo
 - If you lose, you’ll be prompted with a question about Rebecca. Answer correctly to keep your score intact!
 - Test your knowledge and aim for the highest score!
 - Enjoy your game and relive the mystery of Manderley!
+
+
+## How to install
+1. Copy+Paste this into terminal/cmd
+   ```
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+    nvm install 23
+    node -v
+    npm -v
+   ```
