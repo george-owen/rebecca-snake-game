@@ -1,3 +1,5 @@
+[![Version](https://img.shields.io/badge/Version-v1.0-blue?style=flat)](https://www.nano-editor.org/)
+
 # Rebecca Snake Game
 
 ### Powerd by
