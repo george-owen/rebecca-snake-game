@@ -1,5 +1,6 @@
 # Rebecca Snake Game
 [![Google Pay](https://img.shields.io/badge/Google%20Pay-4285F4?logo=googlepay&logoColor=fff)](#)
+[![Google Gemini](https://img.shields.io/badge/Google%20Gemini-886FBF?logo=googlegemini&logoColor=fff)](#)
 [![Static Badge](https://img.shields.io/badge/with%20a%20logo-grey?style=for-the-badge&logo=javascript)](#)
 
 ## Description
