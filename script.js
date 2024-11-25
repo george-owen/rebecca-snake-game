@@ -3,12 +3,20 @@ let rez = 20;
 let food;
 let w;
 let h;
-let questionAsked = false;
+let inQuiz = false; // Controls quiz state
 let gameOver = false;
-let correctAnswer = '42';
-let message = '';
+let questionsCorrect = 0; // Tracks correct answers
+let totalScore = 0; // Tracks cumulative score
+let currentGamePoints = 0; // Points in the current snake game
+let currentQuestionIndex = null; // Prevent consecutive repetition
+let questions = [
+  { question: 'What is 6 * 7?', answer: '42' },
+  { question: 'What is 12 / 4?', answer: '3' },
+  { question: 'What is 5 + 8?', answer: '13' },
+  { question: 'What is 9 - 3?', answer: '6' },
+  { question: 'What is 10 * 2?', answer: '20' }
+];
 
-// Setup Snake game canvas
 function setup() {
   createCanvas(400, 400);
   w = floor(width / rez);
@@ -16,40 +24,42 @@ function setup() {
   frameRate(10);
   snake = new Snake();
   foodLocation();
+  updateScores();
 }
 
-// Function to set food's random position
 function foodLocation() {
   let x = floor(random(w));
   let y = floor(random(h));
   food = createVector(x, y);
 }
 
-// Handle Snake's movement
 function keyPressed() {
-  if (keyCode === LEFT_ARROW) {
-    snake.setDir(-1, 0);
-  } else if (keyCode === RIGHT_ARROW) {
-    snake.setDir(1, 0);
-  } else if (keyCode === DOWN_ARROW) {
-    snake.setDir(0, 1);
-  } else if (keyCode === UP_ARROW) {
-    snake.setDir(0, -1);
+  if (!inQuiz) {
+    if (keyCode === LEFT_ARROW) {
+      snake.setDir(-1, 0);
+    } else if (keyCode === RIGHT_ARROW) {
+      snake.setDir(1, 0);
+    } else if (keyCode === DOWN_ARROW) {
+      snake.setDir(0, 1);
+    } else if (keyCode === UP_ARROW) {
+      snake.setDir(0, -1);
+    }
   }
 }
 
-// Main draw function for Snake game
 function draw() {
   scale(rez);
   background(220);
 
   if (gameOver) {
-    triggerQuiz();
+    if (!inQuiz) triggerQuiz();
     return;
   }
 
   if (snake.eat(food)) {
     foodLocation();
+    currentGamePoints++; // Increase current game points
+    updateScores();
   }
 
   snake.update();
@@ -64,58 +74,80 @@ function draw() {
   }
 }
 
-// Display end game and trigger quiz
 function triggerQuiz() {
-  // Show the quiz question
+  inQuiz = true;
+
+  // Select a new random question
+  let newQuestionIndex;
+  do {
+    newQuestionIndex = Math.floor(Math.random() * questions.length);
+  } while (newQuestionIndex === currentQuestionIndex); // Prevent consecutive repetition
+  currentQuestionIndex = newQuestionIndex;
+  let currentQuestion = questions[currentQuestionIndex];
+
+  // Show the quiz
   const questionElement = document.getElementById('question');
   const answerInput = document.getElementById('answer');
   const submitButton = document.getElementById('submit-answer');
   const feedbackElement = document.getElementById('feedback');
 
-  questionElement.textContent = 'What is 6 * 7?';
+  questionElement.textContent = currentQuestion.question;
   answerInput.style.display = 'block';
   submitButton.style.display = 'block';
   feedbackElement.style.display = 'none';
 
-  submitButton.addEventListener('click', () => checkAnswer(feedbackElement));
-  answerInput.addEventListener('keydown', (event) => {
+  // Add event listeners for answer submission
+  submitButton.onclick = () => handleAnswer(currentQuestion.answer);
+  answerInput.onkeydown = (event) => {
     if (event.key === 'Enter') {
-      checkAnswer(feedbackElement);
+      handleAnswer(currentQuestion.answer);
     }
-  });
+  };
 }
 
-// Check the answer and display result
-function checkAnswer(feedbackElement) {
+function handleAnswer(correctAnswer) {
   const userAnswer = document.getElementById('answer').value.trim();
+  const feedbackElement = document.getElementById('feedback');
 
   if (userAnswer === correctAnswer) {
     feedbackElement.textContent = 'Correct! You can continue the game!';
     feedbackElement.style.color = 'green';
+    questionsCorrect++;
+    totalScore += currentGamePoints * questionsCorrect; // Update total score
     resetGame();
   } else {
-    feedbackElement.textContent = 'Wrong! The correct answer is 42.';
+    feedbackElement.textContent = 'Wrong! Try again.';
     feedbackElement.style.color = 'red';
   }
 
-  // Hide the input and button after 2 seconds
-  setTimeout(() => {
-    document.getElementById('answer').value = '';
-    feedbackElement.textContent = '';
-    document.getElementById('answer').style.display = 'none';
-    document.getElementById('submit-answer').style.display = 'none';
-  }, 2000);
+  feedbackElement.style.display = 'block';
+  updateScores();
 }
 
-// Reset the game to continue after correct answer
 function resetGame() {
+  // Reset game state
   gameOver = false;
+  inQuiz = false;
   snake = new Snake();
   foodLocation();
-  loop();  // Resume the game loop
+  currentGamePoints = 0; // Reset current game points
+  updateScores();
+
+  // Clear input and feedback
+  document.getElementById('answer').value = '';
+  document.getElementById('answer').style.display = 'none';
+  document.getElementById('submit-answer').style.display = 'none';
+  document.getElementById('feedback').style.display = 'none';
+
+  loop(); // Resume the game loop
 }
 
-// Snake class for game functionality
+function updateScores() {
+  document.getElementById('current-score').textContent = `Current Game Points: ${currentGamePoints}`;
+  document.getElementById('questions-correct').textContent = `Questions Correct: ${questionsCorrect}`;
+  document.getElementById('total-score').textContent = `Total Score: ${totalScore}`;
+}
+
 class Snake {
   constructor() {
     this.body = [];
