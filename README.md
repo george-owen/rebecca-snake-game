@@ -25,13 +25,25 @@ Rebecca Snake Game is a twist on the classic Snake game. Every time you lose, yo
 - Enjoy your game and relive the mystery of Manderley!
 
 
+## How to play
+- Use arrow keys to navigate the snake and collect food.
+- If you lose, you’ll be prompted with a question about Rebecca. Answer correctly to keep your score intact!
+- Test your knowledge and aim for the highest score!
+- Enjoy your game and relive the mystery of Manderley!
+
+
 ## How to install
-1. Copy+Paste this into terminal/cmd
+1. Download source from releases or do ``` git clone https://github.com/george-owen/rebecca-snake-game.git ```
+2. Copy+Paste this into terminal/cmd
    ```
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
     nvm install 23
     node -v
     npm -v
    ```
+3. Open project directory.
+4. Run ```node app.js```
 
-### README.md made by: Nathan B
+
+
+### Created by Nathan B, George O, Maximo B
