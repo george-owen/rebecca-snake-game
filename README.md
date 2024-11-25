@@ -48,4 +48,10 @@ Rebecca Snake Game is a twist on the classic Snake game. Every time you lose, yo
 
 
 
-### Created by Nathan B, George O, Maximo B
+## Credits
+![Author](https://img.shields.io/badge/Author-George-blue)
+
+![Contributors](https://img.shields.io/badge/Assistant%20Programmer-Nathan-brightgreen)
+
+![Contributors](https://img.shields.io/badge/Emotional%20Support-Maximo-brightgreen)
+
