@@ -20,6 +20,8 @@
 ## Description
 Rebecca Snake Game is a twist on the classic Snake game. Every time you lose, you'll have to answer a question about the novel Rebecca by Daphne du Maurier. It's a fun way to test your knowledge while enjoying a timeless game!
 
+Feel free to :star: the project to support the contributors!
+
 ## How to install
 1. Download source from releases or do ``` git clone https://github.com/george-owen/rebecca-snake-game.git ```
 2. Copy+Paste this into terminal/cmd
