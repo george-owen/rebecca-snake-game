@@ -26,6 +26,7 @@ Rebecca Snake Game is a twist on the classic Snake game. Every time you lose, yo
 
 ## Notices
 Feel free to :star: the project to support the contributors!
+
 we are not sure if this compiles locally so just let us work on it :pray: - n2x
 
 
