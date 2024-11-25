@@ -1,7 +1,7 @@
 # Rebecca Snake Game
 
 ### Powerd by
-![NANO](https://img.shields.io/badge/NANO-v8.2-blue?style=flat)
+[![NANO](https://img.shields.io/badge/NANO-v8.2-blue?style=flat)](https://www.nano-editor.org/)
 [![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white)](#)
 
 ### Languages
