@@ -49,9 +49,9 @@ Rebecca Snake Game is a twist on the classic Snake game. Every time you lose, yo
 
 
 ## Credits
-![Author](https://img.shields.io/badge/Author-George-blue)
+![Author](https://img.shields.io/badge/George-Lead%20Programmer-blue)
 
-![Contributors](https://img.shields.io/badge/Assistant%20Programmer-Nathan-brightgreen)
+![Contributors](https://img.shields.io/badge/Nathan-Assistant%20Programmer-brightgreen)
 
-![Contributors](https://img.shields.io/badge/Emotional%20Support-Maximo-brightgreen)
+![Contributors](https://img.shields.io/badge/Maximo-Emotional%20Support-brightgreen)
 
