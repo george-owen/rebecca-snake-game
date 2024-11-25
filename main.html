@@ -1,84 +1,29 @@
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snake Game with Quiz</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
-    h1 {
-      color: #333;
-    }
-    .game-container {
-      display: inline-block;
-      background-color: white;
-      padding: 20px;
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-    }
-    #question {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    #answer {
-      padding: 10px;
-      font-size: 18px;
-      margin-top: 10px;
-      width: 200px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    #submit-answer {
-      padding: 10px 20px;
-      font-size: 18px;
-      margin-top: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    #submit-answer:hover {
-      background-color: #45a049;
-    }
-    #feedback {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-    #scoreboard {
-      margin-top: 20px;
-      font-size: 18px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game with Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Snake Game with Quiz</h1>
-
-  <div id="scoreboard">
-    <p id="current-score">Current Game Points: 0</p>
-    <p id="questions-correct">Questions Correct: 0</p>
-    <p id="total-score">Total Score: 0</p>
-  </div>
-
-  <div class="game-container">
-    <p id="question">What is 6 * 7?</p>
-    <input type="text" id="answer" placeholder="Type your answer here" />
-    <button id="submit-answer">Submit Answer</button>
-    <p id="feedback"></p>
-  </div>
-
-  <div id="gameCanvas"></div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-  <script src="script.js"></script>
+    <div class="container">
+        <div class="game">
+            <div class="game-header">
+                <div id="current-score">Current Game Points: 0</div>
+                <div id="questions-correct">Questions Correct: 0</div>
+                <div id="total-score">Total Score: 0</div>
+            </div>
+            <div id="game-canvas" class="game-canvas"></div>
+        </div>
+        <div class="quiz">
+            <div id="question">Question will appear here</div>
+            <input type="text" id="answer" class="answer" style="display: none;">
+            <button id="submit-answer" style="display: none;">Submit</button>
+            <div id="feedback" style="display: none;"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>
