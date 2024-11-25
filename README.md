@@ -33,3 +33,5 @@ Rebecca Snake Game is a twist on the classic Snake game. Every time you lose, yo
     node -v
     npm -v
    ```
+
+### README.md made by: Nathan B
