@@ -1,8 +1,18 @@
 # Rebecca Snake Game
-[![Google Pay](https://img.shields.io/badge/Google%20Pay-4285F4?logo=googlepay&logoColor=fff)](#)
-[![Google Gemini](https://img.shields.io/badge/Google%20Gemini-886FBF?logo=googlegemini&logoColor=fff)](#)
+
+### Powerd by
+![NANO](https://img.shields.io/badge/NANO-v8.2-blue?style=flat)
+[![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white)](#)
+
+### Languages
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#)
-![NANO](https://img.shields.io/badge/NANO-8.2-blue?style=flat-square)
+[![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
+[![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColora=fff)](#)
+
+### OS options
+[![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=F0F0F0)](#)
+[![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white)](#)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](#)
 
 
 ## Description
