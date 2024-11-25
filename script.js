@@ -18,7 +18,8 @@ let questions = [
 ];
 
 function setup() {
-  createCanvas(400, 400);
+  let canvas = createCanvas(400, 400);
+  canvas.parent('game-canvas'); // Attach the canvas to the div
   w = floor(width / rez);
   h = floor(height / rez);
   frameRate(10);
