@@ -1,5 +1,7 @@
 # Rebecca Snake Game
-<img alt="Static Badge" src="https://img.shields.io/badge/Game?label=Type">
+
+## Description
+A game similar to the famous snake where you have to answer a question every time you die.
 
 
 hello friend
