@@ -13,6 +13,8 @@
 [![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=F0F0F0)](#)
 [![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white)](#)
 [![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](#)
+[![SolarIce OS](https://img.shields.io/badge/SolarIce%20OS-v1.0-orange?style=flat)](https://www.oracle.com/solaris/solaris11/)
+
 
 
 ## Description
@@ -46,7 +48,4 @@ Rebecca Snake Game is a twist on the classic Snake game. Every time you lose, yo
 
 
 
-## Credits:
-- George O - Lead programmer
-- Nathan B - Assistant Programmer, Readme
-- Maximo B - Emotional support
+### Created by Nathan B, George O, Maximo B
