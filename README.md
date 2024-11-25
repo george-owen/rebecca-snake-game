@@ -2,7 +2,7 @@
 [![Google Pay](https://img.shields.io/badge/Google%20Pay-4285F4?logo=googlepay&logoColor=fff)](#)
 [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-886FBF?logo=googlegemini&logoColor=fff)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#)
-![NANO](https://img.shields.io/badge/NANO-1.23-blue?style=flat-square)
+![NANO](https://img.shields.io/badge/NANO-8.23-blue?style=flat-square)
 
 
 ## Description
