@@ -1,5 +1,6 @@
 # Rebecca Snake Game
 [![Google Pay](https://img.shields.io/badge/Google%20Pay-4285F4?logo=googlepay&logoColor=fff)](#)
+[![Static Badge](https://img.shields.io/badge/with%20a%20logo-grey?style=for-the-badge&logo=javascript)](#)
 
 ## Description
 Rebecca Snake Game is a twist on the classic Snake game. Every time you lose, you'll have to answer a question about the novel Rebecca by Daphne du Maurier. It's a fun way to test your knowledge while enjoying a timeless game!
