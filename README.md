@@ -1,4 +1,6 @@
-# rebecca-snake-game
+# Rebecca Snake Game
+<img alt="Static Badge" src="https://img.shields.io/badge/Game?label=Type">
+
 
 hello friend
 1. name
