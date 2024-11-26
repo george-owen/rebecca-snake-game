@@ -63,7 +63,7 @@ we are not sure if this compiles locally so just let us work on it
 ## Credits
 | Role          | Name|
 |---------------|----------------------------------------------------------------------|
-| **oversight**    | George Owen|
-| **Assistant Developer** | Nathan Berndt|
-| **JSON file Technician** |Maximo Blazquez Alamaddine|
+| **Author**    | George Owen|
+| **Lead Developer** | Nathan Berndt|
+| **Questions Developer** |Maximo Blazquez Alamaddine|
 
