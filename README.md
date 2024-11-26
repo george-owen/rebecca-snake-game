@@ -4,6 +4,7 @@
 
 ### Powerd by
 [![NANO](https://img.shields.io/badge/NANO-v8.2-blue?style=flat)](https://www.nano-editor.org/)
+[![CodePen](https://img.shields.io/badge/CodePen-white?&logo=codepen&logoColor=black)](#)
 [![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white)](#)
 
 ### Languages
@@ -36,7 +37,11 @@ we are not sure if this compiles locally so just let us work on it
 - wasd key implementation
 - more quotes!!!
 
-## How to install (Hard Version)
+## How to install (Easy, online version)
+Head to our CodePen: https://codepen.io/NathanB24/full/GgKKXdP
+
+
+## How to install (Hard, local Version)
 1. Download source from releases or do ``` git clone https://github.com/george-owen/rebecca-snake-game.git ```
 2. Copy+Paste this into terminal/cmd
    ```
@@ -51,14 +56,10 @@ we are not sure if this compiles locally so just let us work on it
 ## How to play
 - Use arrow keys to navigate the snake and collect food.
 - If you lose, you’ll be prompted with a question about Rebecca. Answer correctly to keep your score intact!
+- If you get 3 questions wrong, you will lose!
 - Test your knowledge and aim for the highest score!
 - Enjoy your game and relive the mystery of Manderley!
 
-## How to play
-- Use arrow keys to navigate the snake and collect food.
-- If you lose, you’ll be prompted with a question about Rebecca. Answer correctly to keep your score intact!
-- Test your knowledge and aim for the highest score!
-- Enjoy your game and relive the mystery of Manderley!
 
 ## Credits
 | Role          | Name|
