@@ -36,7 +36,7 @@ we are not sure if this compiles locally so just let us work on it
 - wasd key implementation
 - more quotes!!!
 
-## How to install
+## How to install (Hard Version)
 1. Download source from releases or do ``` git clone https://github.com/george-owen/rebecca-snake-game.git ```
 2. Copy+Paste this into terminal/cmd
    ```
@@ -63,7 +63,7 @@ we are not sure if this compiles locally so just let us work on it
 ## Credits
 | Role          | Name|
 |---------------|----------------------------------------------------------------------|
-| **Author**    | George Owen|
+| **oversight**    | George Owen|
 | **Assistant Developer** | Nathan Berndt|
-| **Special Thanks** |Maximo Blazquez Alamaddine|
+| **JSON file Technician** |Maximo Blazquez Alamaddine|
 
