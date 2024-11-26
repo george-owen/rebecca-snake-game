@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game with Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game with Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script> <!-- Include p5.js -->
+  <script src="game.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="game">
-            <div class="game-header">
-                <div id="current-score">Current Game Points: 0</div>
-                <div id="questions-correct">Questions Correct: 0</div>
-                <div id="total-score">Total Score: 0</div>
-            </div>
-            <div id="game-canvas" class="game-canvas"></div>
-        </div>
-        <div class="quiz">
-            <div id="question">Question will appear here</div>
-            <input type="text" id="answer" class="answer" style="display: none;">
-            <button id="submit-answer" style="display: none;">Submit</button>
-            <div id="feedback" style="display: none;"></div>
-        </div>
+  <div class="container">
+    <header>
+      <h1>Snake Game with Quiz</h1>
+      <div class="score-box">
+        <p id="current-score"><b>Current Game Points:</b> 0</p>
+        <p id="questions-correct"><b>Questions Correct:</b> 0</p>
+        <p id="total-score"><b>Total Score:</b> 0</p>
+        <p id="wrong-answers"><b>Wrong Answers:</b> 0/3</p>
+      </div>
+      <button id="reset-btn" class="reset-btn">Reset Game</button>
+    </header>
+    <div class="game-container">
+      <div id="game" class="game"></div>
+      <div id="quiz" class="quiz">
+        <h2 id="question"></h2>
+        <input id="answer" type="text" placeholder="Type your answer here">
+        <button id="submit-answer">Submit Answer</button>
+        <p id="feedback"></p>
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="game.js"></script>
+  </div>
 </body>
 </html>
