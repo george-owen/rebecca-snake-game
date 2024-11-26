@@ -31,7 +31,7 @@ Feel free to :star: the project to support the contributors!
 we are not sure if this compiles locally so just let us work on it
 
 
-## future plans
+## Future plans
 - highscore system using a server
 - cookie integration
 - wasd key implementation
