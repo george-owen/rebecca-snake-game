@@ -31,10 +31,10 @@ we are not sure if this compiles locally so just let us work on it
 
 
 ## future plans
-highscore system using a server
-cookie integration
-wasd key implementation
-more quotes!!!
+- highscore system using a server
+- cookie integration
+- wasd key implementation
+- more quotes!!!
 
 ## How to install
 1. Download source from releases or do ``` git clone https://github.com/george-owen/rebecca-snake-game.git ```
