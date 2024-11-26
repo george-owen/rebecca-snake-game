@@ -66,5 +66,5 @@ Head to our CodePen: https://codepen.io/NathanB24/full/GgKKXdP
 |---------------|----------------------------------------------------------------------|
 | **Author**    | George Owen|
 | **Lead Developer** | Nathan Berndt|
-| **Questions Developer** |Maximo Blazquez Alamaddine|
+| **Questions Developer/Legend** |Maximo Blazquez Alamaddine|
 
